@@ -1,0 +1,120 @@
+extends ../../layouts/default-newpage
+
+block head
+ title newpage 
+meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Agency - Start Bootstrap Theme
+    //
+       Bootstrap Core CSS 
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    //
+       Custom CSS 
+    link(href='css/agency.css', rel='stylesheet')
+    //
+       Custom Fonts 
+    link(href='font-awesome-4.1.0/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Kaushan+Script', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+    //
+       HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries 
+    //
+       WARNING: Respond.js doesn't work if you view the page via file:// 
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+
+block body
+  nav.navbar.navbar-default
+    .container
+        //
+           Brand and toggle get grouped for better mobile display 
+        .navbar-header.page-scroll
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand.page-scroll(href='#page-top') Start Bootstrap
+        //
+           Collect the nav links, forms, and other content for toggling 
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.hidden
+              a(href='#page-top')
+            li
+              a.page-scroll(href='#services') Services
+            li
+              a.page-scroll(href='#portfolio') Portfolio
+            li
+              a.page-scroll(href='#about') About
+            li
+              a.page-scroll(href='#team') Team
+            li
+              a.page-scroll(href='#contact') Contact
+        //
+           /.navbar-collapse 
+      //
+         /.container-fluid 
+
+  header
+    .container
+        .intro-text
+          .intro-lead-in Welcome To Our Studio!
+          .intro-heading It's Nice To Meet You
+          a.page-scroll.btn.btn-xl(href='#services') Tell Me More
+
+    //
+       Services Section 
+    section#services
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading Services
+            h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+        .row.text-center
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-shopping-cart.fa-stack-1x.fa-inverse
+            h4.service-heading E-Commerce
+            p.text-muted
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-laptop.fa-stack-1x.fa-inverse
+            h4.service-heading Responsive Design
+            p.text-muted
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-lock.fa-stack-1x.fa-inverse
+            h4.service-heading Web Security
+            p.text-muted
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+//
+     jQuery 
+    script(src='js/jquery.js')
+    //
+       Bootstrap Core JavaScript 
+    script(src='js/bootstrap.min.js')
+    //
+       Plugin JavaScript 
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')
+    script(src='js/classie.js')
+    script(src='js/cbpAnimatedHeader.js')
+    //
+       Contact Form JavaScript 
+    script(src='js/jqBootstrapValidation.js')
+    script(src='js/contact_me.js')
+    //
+       Custom Theme JavaScript 
+    script(src='js/agency.js')
+
